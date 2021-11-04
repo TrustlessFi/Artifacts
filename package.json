@@ -1,0 +1,11 @@
+{
+  "name": "@trustlessfi/artifacts",
+  "packageManager": "yarn@3.0.2",
+  "version": "0.1.0",
+  "description": "Artifacts, including ABIs for deployed trustless protocols.",
+  "repository": "https://github.com/TrustlessFi/Artifacts",
+  "author": "TrustlessOfficial <TrustlessFi@protonmail.com>",
+  "license": "MIT",
+  "main": "dist/",
+  "types": "dist/"
+}

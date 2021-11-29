@@ -1,0 +1,83 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "ITcpAllocation",
+  "sourceName": "contracts/core/auxiliary/allocations/interfaces/ITcpAllocation.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "dest",
+          "type": "address"
+        },
+        {
+          "internalType": "uint128",
+          "name": "count",
+          "type": "uint128"
+        }
+      ],
+      "name": "getTokens",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "incentiveGuardian",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "allocatee",
+          "type": "address"
+        },
+        {
+          "internalType": "uint128",
+          "name": "count",
+          "type": "uint128"
+        }
+      ],
+      "name": "increaseAllocation",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "dest",
+          "type": "address"
+        },
+        {
+          "internalType": "uint128",
+          "name": "count",
+          "type": "uint128"
+        },
+        {
+          "internalType": "uint8",
+          "name": "lockDurationMonths",
+          "type": "uint8"
+        }
+      ],
+      "name": "lockTokensIntoDao",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

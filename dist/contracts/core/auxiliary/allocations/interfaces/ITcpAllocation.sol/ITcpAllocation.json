@@ -23,7 +23,7 @@
     },
     {
       "inputs": [],
-      "name": "incentiveGuardian",
+      "name": "incentiveAllocation",
       "outputs": [
         {
           "internalType": "address",

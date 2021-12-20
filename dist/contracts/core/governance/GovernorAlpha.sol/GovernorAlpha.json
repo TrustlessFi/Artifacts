@@ -266,6 +266,11 @@
             },
             {
               "internalType": "string",
+              "name": "title",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
               "name": "ipfsHash",
               "type": "string"
             },
@@ -502,6 +507,11 @@
       "outputs": [
         {
           "internalType": "string",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
           "name": "ipfsHash",
           "type": "string"
         },
@@ -575,6 +585,11 @@
           "internalType": "bytes[]",
           "name": "calldatas",
           "type": "bytes[]"
+        },
+        {
+          "internalType": "string",
+          "name": "title",
+          "type": "string"
         },
         {
           "internalType": "string",

@@ -362,7 +362,7 @@
             },
             {
               "internalType": "uint64",
-              "name": "lastBorrowTime",
+              "name": "lastBlockPositionIncreased",
               "type": "uint64"
             },
             {

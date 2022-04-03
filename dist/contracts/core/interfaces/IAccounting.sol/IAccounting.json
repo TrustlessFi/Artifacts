@@ -100,24 +100,6 @@
     {
       "inputs": [
         {
-          "internalType": "address",
-          "name": "owner",
-          "type": "address"
-        },
-        {
-          "internalType": "uint256",
-          "name": "nftID",
-          "type": "uint256"
-        }
-      ],
-      "name": "addPositionToIndex",
-      "outputs": [],
-      "stateMutability": "nonpayable",
-      "type": "function"
-    },
-    {
-      "inputs": [
-        {
           "internalType": "uint32[]",
           "name": "ids",
           "type": "uint32[]"
@@ -157,7 +139,7 @@
     {
       "inputs": [
         {
-          "internalType": "contract IUniswapV3Pool",
+          "internalType": "contract CharmWrapper",
           "name": "pool",
           "type": "address"
         },
@@ -168,19 +150,6 @@
         }
       ],
       "name": "decreasePoolLiquidity",
-      "outputs": [],
-      "stateMutability": "nonpayable",
-      "type": "function"
-    },
-    {
-      "inputs": [
-        {
-          "internalType": "uint256",
-          "name": "nftID",
-          "type": "uint256"
-        }
-      ],
-      "name": "deletePoolPosition",
       "outputs": [],
       "stateMutability": "nonpayable",
       "type": "function"
@@ -225,9 +194,14 @@
     {
       "inputs": [
         {
-          "internalType": "uint256",
-          "name": "nftID",
-          "type": "uint256"
+          "internalType": "address",
+          "name": "owner",
+          "type": "address"
+        },
+        {
+          "internalType": "contract CharmWrapper",
+          "name": "pool",
+          "type": "address"
         }
       ],
       "name": "getPoolPosition",
@@ -238,11 +212,6 @@
               "internalType": "address",
               "name": "owner",
               "type": "address"
-            },
-            {
-              "internalType": "uint16",
-              "name": "poolID",
-              "type": "uint16"
             },
             {
               "internalType": "uint256",
@@ -268,16 +237,6 @@
               "internalType": "uint64",
               "name": "lastTimeRewarded",
               "type": "uint64"
-            },
-            {
-              "internalType": "int24",
-              "name": "tickLower",
-              "type": "int24"
-            },
-            {
-              "internalType": "int24",
-              "name": "tickUpper",
-              "type": "int24"
             },
             {
               "internalType": "uint32",
@@ -347,7 +306,7 @@
             },
             {
               "internalType": "uint64",
-              "name": "lastBorrowTime",
+              "name": "lastBlockPositionIncreased",
               "type": "uint64"
             },
             {
@@ -392,7 +351,7 @@
     {
       "inputs": [
         {
-          "internalType": "contract IUniswapV3Pool",
+          "internalType": "contract CharmWrapper",
           "name": "pool",
           "type": "address"
         }
@@ -484,7 +443,7 @@
     {
       "inputs": [
         {
-          "internalType": "contract IUniswapV3Pool",
+          "internalType": "contract CharmWrapper",
           "name": "pool",
           "type": "address"
         },
@@ -515,20 +474,7 @@
     {
       "inputs": [
         {
-          "internalType": "address",
-          "name": "newRewards",
-          "type": "address"
-        }
-      ],
-      "name": "onRewardsUpgrade",
-      "outputs": [],
-      "stateMutability": "nonpayable",
-      "type": "function"
-    },
-    {
-      "inputs": [
-        {
-          "internalType": "contract IUniswapV3Pool",
+          "internalType": "contract CharmWrapper",
           "name": "pool",
           "type": "address"
         }
@@ -547,7 +493,7 @@
     {
       "inputs": [
         {
-          "internalType": "address payable",
+          "internalType": "address",
           "name": "account",
           "type": "address"
         },
@@ -583,9 +529,14 @@
     {
       "inputs": [
         {
-          "internalType": "uint256",
-          "name": "nftID",
-          "type": "uint256"
+          "internalType": "address",
+          "name": "owner",
+          "type": "address"
+        },
+        {
+          "internalType": "contract CharmWrapper",
+          "name": "pool",
+          "type": "address"
         },
         {
           "components": [
@@ -593,11 +544,6 @@
               "internalType": "address",
               "name": "owner",
               "type": "address"
-            },
-            {
-              "internalType": "uint16",
-              "name": "poolID",
-              "type": "uint16"
             },
             {
               "internalType": "uint256",
@@ -623,16 +569,6 @@
               "internalType": "uint64",
               "name": "lastTimeRewarded",
               "type": "uint64"
-            },
-            {
-              "internalType": "int24",
-              "name": "tickLower",
-              "type": "int24"
-            },
-            {
-              "internalType": "int24",
-              "name": "tickUpper",
-              "type": "int24"
             },
             {
               "internalType": "uint32",
@@ -701,7 +637,7 @@
             },
             {
               "internalType": "uint64",
-              "name": "lastBorrowTime",
+              "name": "lastBlockPositionIncreased",
               "type": "uint64"
             },
             {
@@ -748,7 +684,7 @@
     {
       "inputs": [
         {
-          "internalType": "contract IUniswapV3Pool",
+          "internalType": "contract CharmWrapper",
           "name": "pool",
           "type": "address"
         },

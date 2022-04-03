@@ -6,12 +6,50 @@
     {
       "inputs": [
         {
-          "internalType": "uint64",
+          "internalType": "uint256",
           "name": "positionID",
-          "type": "uint64"
+          "type": "uint256"
         }
       ],
-      "name": "getTokenURI",
+      "name": "getTokenDescription",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "positionID",
+          "type": "uint256"
+        }
+      ],
+      "name": "getTokenName",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "positionID",
+          "type": "uint256"
+        }
+      ],
+      "name": "getTokenSVG",
       "outputs": [
         {
           "internalType": "string",

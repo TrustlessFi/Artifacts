@@ -7,19 +7,6 @@
       "anonymous": false,
       "inputs": [
         {
-          "indexed": false,
-          "internalType": "uint64",
-          "name": "penalty",
-          "type": "uint64"
-        }
-      ],
-      "name": "LiquidationPenaltyUpdated",
-      "type": "event"
-    },
-    {
-      "anonymous": false,
-      "inputs": [
-        {
           "indexed": true,
           "internalType": "address",
           "name": "owner",
@@ -164,19 +151,6 @@
       "anonymous": false,
       "inputs": [
         {
-          "indexed": false,
-          "internalType": "uint128",
-          "name": "min",
-          "type": "uint128"
-        }
-      ],
-      "name": "MinHueCountPerPositionUpdated",
-      "type": "event"
-    },
-    {
-      "anonymous": false,
-      "inputs": [
-        {
           "indexed": true,
           "internalType": "address",
           "name": "pool",
@@ -293,19 +267,6 @@
       "type": "event"
     },
     {
-      "anonymous": false,
-      "inputs": [
-        {
-          "indexed": false,
-          "internalType": "uint64",
-          "name": "duration",
-          "type": "uint64"
-        }
-      ],
-      "name": "TwapDurationUpdated",
-      "type": "event"
-    },
-    {
       "inputs": [],
       "name": "accrueRewards",
       "outputs": [],
@@ -315,7 +276,7 @@
     {
       "inputs": [
         {
-          "internalType": "contract IUniswapV3Pool",
+          "internalType": "contract CharmWrapper",
           "name": "pool",
           "type": "address"
         },

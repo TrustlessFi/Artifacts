@@ -29,7 +29,7 @@
         {
           "components": [
             {
-              "internalType": "contract IUniswapV3Pool",
+              "internalType": "contract CharmWrapper",
               "name": "pool",
               "type": "address"
             },
